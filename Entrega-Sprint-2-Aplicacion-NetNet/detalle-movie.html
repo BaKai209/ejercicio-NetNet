@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Detalle / Recurso Css-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!--Css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Detalle Movies</title>
+</head>
+
+<body>
+    <!--Regresar a inicio - Menu Nav-->
+    <header>
+        <div class="contenedor">
+            <a href="index.html"
+                style="text-decoration:none; font-size:40px ;margin-left:10px; margin-top:5px;color:whitesmoke" <i
+                class="fas fa-angle-left"></i></a>
+            <nav>
+                <a href="#">Series</a>
+                <a href="#flecha-izquierda">movies</a>
+                <a href="List.html">list</a>
+                <a href="#">login</a>
+            </nav>
+        </div>
+    </header>
+    <!--Contenido "Principal"-->
+    <main>
+        <!--Banner Referencial-->
+        <div class="banner-inicial">
+            <div class="contenedor">
+                <h1 id="titulo">Dragon Ball Z</h1>
+                <br>
+                <ul>
+                    <li class="descripcion-detalle"> ° 99% Concidencia</li>
+                    <li class="descripcion-detalle2">2021 <i class="far fa-calendar-alt"></i></li>
+                    <li class="descripcion-detalle2">1H 38m |HD|</li>
+                </ul>
+                <br>
+                <br>
+                <button role="button" class="boton" style="background:whitesmoke;color:black;"><i
+                        class="fas fa-play"></i>play</button>
+                <button role="button" class="boton"><i class="fas fa-download"></i>download</button>
+                <!--Parrafo referencial-->
+                <p class="parrafo-referencial">Un joven guerrero llamado Goku (Seong-tae Heo) va en una búsqueda escandalosa de adquirir siete
+					esferas mágicas, en el camino va golpeando a personas malas que quieren robar las esferas para sus
+					propios deseos. Para que el dragón Shenlong conceda los deseos lo único que se debe hacer es juntar
+					las siete esferas del Dragón.</p>
+            </div>
+        </div>
+        <!--Boton agregar a mi lista-->
+        <div class="opciones-agregar">
+            <a href="List.html"><i id="agregar" class="fas fa-plus">Add to my list</i></a>
+            <i id="calificar" class="far fa-thumbs-up">check</i>
+            <i id="compartir" class="fas fa-share-alt">Share</i>
+        </div>
+        <!--Contenor secundario-->
+        <div class="contenedor-two">
+            <div class="contenedor-two-controles">
+                <h3>Same Movies :</h3>
+            </div>
+
+            <div class="contenedor-principal">
+                <!--Indicador Izquierdo-->
+                <button id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="pelicula">
+                            <a href="#"><img src="image/portada_ball.jpeg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/yaiba.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/myHeroAcademia.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/Caballeros.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/inuyasha.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/Death.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/Shitara.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/Overlord.jpg" alt=""></a>
+                        </div>
+                        <div class="pelicula">
+                            <a href="#"><img src="image/Digimon-Tamers.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!--Indicador Derecha-->
+                <button id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-1">
+            <button class="footer-boton"><i class="fas fa-home"></i>Home</button>
+            <button class="footer-boton"><i class="fas fa-video"></i>coming soon</button>
+            <button class="footer-boton"><i class="fas fa-search"></i>search</button>
+            <button class="footer-boton"><i class="fas fa-download"></i>download</button>
+
+        </div>
+    </div>
+    <!--Js Conex-->
+    <script src="main.js"></script>
+    <script src="detalle.js"></script>
+
+</body>
+
+</html>

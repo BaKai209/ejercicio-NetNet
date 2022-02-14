@@ -1,0 +1,351 @@
+/*Variables principales*/
+:root {
+	--rojo: #180392d0;
+	--fondo: #1b0106;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondo);
+	font-family: arial;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+/*Navegacion*/
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo-net {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: normal;
+	color: var(--rojo);
+	font-size: 45px;
+}
+
+header nav a {
+	color: rgb(0, 0, 255);
+	text-decoration: none;
+	margin-right: 20px;
+    font-size: 0.8rem;
+}
+
+/*Descripcion Banner-Slider*/
+ul {
+    list-style-type: none;
+  }
+  li {
+    color:whitesmoke;
+    font-size:0.8rem;
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+  }
+/*Parrafo referencial*/
+.parrafo-referencial{
+	font-size:15px;
+	color:rgb(245, 245, 245);
+	justify-content: center;
+	margin-top:5%;
+	text-align: center;
+}
+.pelicula:hover{
+	border: 3px solid rgb(8, 69, 236);
+}
+/* Pelicula Principal segun detalle*/
+.banner-inicial {
+	font-size: 16px;
+	min-height: 40.40em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(image/portada_ball.jpeg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+.b-Academia{
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(image/myHeroAcademia.jpg);
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;	
+}
+.b-Tamers{
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(image/Digimon-Tamers.jpg);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;		
+}
+.banner-inicial .contenedor,
+.b-Academia .contenedor,
+.b-Tamers .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.banner-inicial .titulo,
+.b-Academia .titulo,
+.b-Tamers .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.banner-inicial .descripcion,
+.b-Academia .descripcion
+.b-Tamers .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 40%;
+	margin-bottom: 1.25em;
+}
+/*Descripcion Primer Detalle*/
+.banner-inicial .descripcion-detalle,
+.b-Academia .descripcion-detalle,
+.b-Tamers .descripcion-detalle {
+	list-style-type: none;
+    font-size:15px;
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+	color:rgb(0, 255, 85);
+}
+/*Descripcion Segundo Detalle*/
+.banner-inicial .descripcion-detalle2,
+.b-Academia .descripcion-detalle {
+	list-style-type: none;
+    font-size:0.9rem;
+    float: left;
+    margin-right: 10px;
+    padding: 0 4px;
+	color:rgb(158, 158, 158);
+}
+.banner-inicial .boton,
+.b-Academia .boton,
+.b-Tamers .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.banner-inicial .boton:hover,
+.b-Academia .boton:hover
+.b-Tamers .boton {
+	background: #fff;
+	color: #000;
+}
+
+.banner-inicial .boton i,
+.b-Academia .boton i 
+.b-Tamers .boton{
+	margin-right: 1.25em;
+}
+
+/*Selector para lista- Detalle*/
+#agregar, #calificar, #compartir{
+	margin:0;
+	color:rgb(168, 167, 167);
+	font-size:25px;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	}
+.opciones-agregar{
+	font-family: arial;
+	font-size:30px;
+}	
+/* Contenedores secundarios*/
+.contenedor-two-controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.contenedor-two-controles h3 {
+	color: #fff;
+	font-size: 30px;
+}
+
+.contenedor-two-controles button {
+	background: #fff;
+	height: 3px;
+	width: 10px;
+	cursor: pointer;
+	border: none;
+	margin-right: 2px;
+}
+
+/* Carousel de peliculas */
+.contenedor-two .contenedor-carousel {
+	width: 100%;
+	padding: 20px 0;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.contenedor-two .contenedor-carousel .carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.contenedor-two .contenedor-carousel .carousel .pelicula {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0,0,0, .3);
+}
+.contenedor-two .contenedor-carousel .carousel .pelicula img {
+	width: 100%;
+	height: 400px;
+	vertical-align: top;
+}
+
+/* Indicadores izq-der */
+.contenedor-two {
+	margin-bottom: 70px;
+}
+
+.contenedor-two .contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.contenedor-two .contenedor-principal .flecha-izquierda,
+.contenedor-two .contenedor-principal .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.contenedor-two .contenedor-principal .flecha-izquierda:hover,
+.contenedor-two .contenedor-principal .flecha-derecha:hover {
+	background: rgba(26, 1, 253, 0.9);
+}
+
+.contenedor-two .contenedor-principal .flecha-izquierda {
+	left: 0;
+}
+
+.contenedor-two .contenedor-principal .flecha-derecha {
+	right: 0;
+}
+
+/* Media Queries*/
+@media screen and (max-width: 800px) {
+	header .logotipo {
+		margin-bottom: 10px;
+		font-size: 30px;
+	}
+
+	header .contenedor {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.banner-inicial, .b-Academia, .b-Tamers{
+		font-size: 14px;
+	}
+
+	.banner-inicial .descripcion,
+	.b-Academia .descripcion
+	.b-Tamers .descripcion {
+		max-width: 100%;
+	}
+
+	.contenedor-two .contenedor-carousel {
+		overflow: visible;
+	}
+
+	.contenedor-two .contenedor-carousel .carousel {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+	}
+
+	.contenedor-two 
+	.contenedor-two .flecha-izquierda,
+	.contenedor-two .flecha-derecha {
+		display: none;
+	}
+}
+
+/*Footer*/
+.footer {
+    height: 2rem;
+    width: 100%;
+    height:4rem;
+    background: rgb(8, 8, 8);
+    position: fixed;
+    bottom: 0;
+    
+  }
+  .footer-1 {
+    margin: 0 auto;
+    margin-top:25px;
+    width: 50rem;
+    height:3rem;
+    background: rgb(0, 0, 0);
+    text-align: center;
+ }
+
+ .footer-boton{
+    background:transparent;
+    color:rgb(121, 120, 120);
+    font-size: 0.9rem;
+    border:none;
+ }
+ .footer-boton i{
+     color:rgb(172, 170, 170);
+     margin:0.3rem;
+	 font-size:0.9rem;
+    
+ }
+
+ @media (max-width:700px) {
+    .footer{
+      display: flex;
+      margin-top: 10px;
+      
+    
+    }
+    }
+
+
